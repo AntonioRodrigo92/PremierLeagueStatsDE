@@ -1,0 +1,707 @@
+package Utils
+
+object Constants {
+
+  val SEASON: String = "season"
+  val TEAM: String = "team"
+  val HOME_TEAM: String = "home_team"
+  val AWAY_TEAM: String = "away_team"
+  val GAME_DATETIME: String = "game_datetime"
+  val GAME_DATE: String = "game_date"
+  val GAME_TIME: String = "game_time"
+
+  val HOME_TEAM_GOALS: String = "home_team_goals"
+  val AWAY_TEAM_GOALS: String = "away_team_goals"
+  val HOME_TEAM_XG: String = "home_team_xg"
+  val AWAY_TEAM_XG: String = "away_team_xg"
+  val HOME_TEAM_SHOTS: String = "home_team_shots"
+  val AWAY_TEAM_SHOTS: String = "away_team_shots"
+  val HOME_TEAM_SHOTSONTARGET: String = "home_team_shotsontarget"
+  val AWAY_TEAM_SHOTSONTARGET: String = "away_team_shotsontarget"
+  val HOME_TEAM_POSSESSION: String = "home_team_possession"
+  val AWAY_TEAM_POSSESSION: String = "away_team_possession"
+  val HOME_TEAM_FOULS: String = "home_team_fouls"
+  val AWAY_TEAM_FOULS: String = "away_team_fouls"
+  val HOME_TEAM_OFFSIDE: String = "home_team_offside"
+  val AWAY_TEAM_OFFSIDE: String = "away_team_offside"
+  val AWAY_TEAM_GOALS_AGAINST: String = "away_team_goals_against"
+  val HOME_TEAM_GOALS_AGAINST: String = "home_team_goals_against"
+  val AWAY_TEAM_XG_AGAINST: String = "away_team_xg_against"
+  val HOME_TEAM_XG_AGAINST: String = "home_team_xg_against"
+  val AWAY_TEAM_SHOTS_AGAINST: String = "away_team_shots_against"
+  val HOME_TEAM_SHOTS_AGAINST: String = "home_team_shots_against"
+  val AWAY_TEAM_POSSESSION_AGAINST: String = "away_team_possession_against"
+  val HOME_TEAM_POSSESSION_AGAINST: String = "home_team_possession_against"
+  val AWAY_TEAM_FOULS_AGAINST: String = "away_team_fouls_against"
+  val HOME_TEAM_FOULS_AGAINST: String = "home_team_fouls_against"
+  val AWAY_TEAM_OFFSIDE_AGAINST: String = "away_team_offside_against"
+  val HOME_TEAM_OFFSIDE_AGAINST: String = "home_team_offside_against"
+
+  val GOALS_SCORED: String = "goals_scored"
+  val GOALS_SCORED_AGAINST: String = "goals_scored_against"
+  val XG: String = "xg"
+  val XG_AGAINST: String = "xg_against"
+  val SHOTS: String = "shots"
+  val SHOTS_AGAINST: String = "shots_against"
+  val SHOTSONTARGET: String = "shotsontarget"
+  val SHOTSONTARGET_AGAINST: String = "shotsontarget_against"
+  val POSSESSION: String = "possession"
+  val POSSESSION_AGAINST: String = "possession_against"
+  val FOULS: String = "fouls"
+  val FOULS_AGAINST: String = "fouls_against"
+  val OFFSIDE: String = "offside"
+  val OFFSIDE_AGAINST: String = "offside_against"
+  val PLAYED_AGAINST: String = "played_against"
+  val PLAYED_AT: String = "played_at"
+
+  val MATCH_RESULT: String = "match_result"
+  val WIN: String = "WIN"
+  val DRAW: String = "DRAW"
+  val LOSS: String = "LOSS"
+  val HOME_TEAM_WIN: String = "HOME_TEAM_WIN"
+  val AWAY_TEAM_WIN: String = "AWAY_TEAM_WIN"
+
+  val HOME_TEAM_GOALS_SCORED_LAST_GAME: String = "home_team_goals_scored_last_game"
+  val HOME_TEAM_AVG_GOALS_SCORED_LAST_3_GAMES: String = "home_team_avg_goals_scored_last_3_games"
+  val HOME_TEAM_AVG_GOALS_SCORED_LAST_5_GAMES: String = "home_team_avg_goals_scored_last_5_games"
+  val HOME_TEAM_GOALS_SCORED_AGAINST_LAST_GAME: String = "home_team_goals_scored_against_last_game"
+  val HOME_TEAM_AVG_GOALS_SCORED_AGAINST_LAST_3_GAMES: String = "home_team_avg_goals_scored_against_last_3_games"
+  val HOME_TEAM_AVG_GOALS_SCORED_AGAINST_LAST_5_GAMES: String = "home_team_avg_goals_scored_against_last_5_games"
+  val HOME_TEAM_XG_LAST_GAME: String = "home_team_xg_last_game"
+  val HOME_TEAM_AVG_XG_LAST_3_GAMES: String = "home_team_avg_xg_last_3_games"
+  val HOME_TEAM_AVG_XG_LAST_5_GAMES: String = "home_team_avg_xg_last_5_games"
+  val HOME_TEAM_XG_AGAINST_LAST_GAME: String = "home_team_xg_against_last_game"
+  val HOME_TEAM_AVG_XG_AGAINST_LAST_3_GAMES: String = "home_team_avg_xg_against_last_3_games"
+  val HOME_TEAM_AVG_XG_AGAINST_LAST_5_GAMES: String = "home_team_avg_xg_against_last_5_games"
+  val HOME_TEAM_SHOTS_LAST_GAME: String = "home_team_shots_last_game"
+  val HOME_TEAM_AVG_SHOTS_LAST_3_GAMES: String = "home_team_avg_shots_last_3_games"
+  val HOME_TEAM_AVG_SHOTS_LAST_5_GAMES: String = "home_team_avg_shots_last_5_games"
+  val HOME_TEAM_SHOTS_AGAINST_LAST_GAME: String = "home_team_shots_against_last_game"
+  val HOME_TEAM_AVG_SHOTS_AGAINST_LAST_3_GAMES: String = "home_team_avg_shots_against_last_3_games"
+  val HOME_TEAM_AVG_SHOTS_AGAINST_LAST_5_GAMES: String = "home_team_avg_shots_against_last_5_games"
+  val HOME_TEAM_SHOTSONTARGET_LAST_GAME: String = "home_team_shotsontarget_last_game"
+  val HOME_TEAM_AVG_SHOTSONTARGET_LAST_3_GAMES: String = "home_team_avg_shotsontarget_last_3_games"
+  val HOME_TEAM_AVG_SHOTSONTARGET_LAST_5_GAMES: String = "home_team_avg_shotsontarget_last_5_games"
+  val HOME_TEAM_SHOTSONTARGET_AGAINST_LAST_GAME: String = "home_team_shotsontarget_against_last_game"
+  val HOME_TEAM_AVG_SHOTSONTARGET_AGAINST_LAST_3_GAMES: String = "home_team_avg_shotsontarget_against_last_3_games"
+  val HOME_TEAM_AVG_SHOTSONTARGET_AGAINST_LAST_5_GAMES: String = "home_team_avg_shotsontarget_against_last_5_games"
+  val HOME_TEAM_POSSESSION_LAST_GAME: String = "home_team_possession_last_game"
+  val HOME_TEAM_AVG_POSSESSION_LAST_3_GAMES: String = "home_team_avg_possession_last_3_games"
+  val HOME_TEAM_AVG_POSSESSION_LAST_5_GAMES: String = "home_team_avg_possession_last_5_games"
+  val HOME_TEAM_POSSESSION_AGAINST_LAST_GAME: String = "home_team_possession_against_last_game"
+  val HOME_TEAM_AVG_POSSESSION_AGAINST_LAST_3_GAMES: String = "home_team_avg_possession_against_last_3_games"
+  val HOME_TEAM_AVG_POSSESSION_AGAINST_LAST_5_GAMES: String = "home_team_avg_possession_against_last_5_games"
+  val HOME_TEAM_FOULS_LAST_GAME: String = "home_team_fouls_last_game"
+  val HOME_TEAM_AVG_FOULS_LAST_3_GAMES: String = "home_team_avg_fouls_last_3_games"
+  val HOME_TEAM_AVG_FOULS_LAST_5_GAMES: String = "home_team_avg_fouls_last_5_games"
+  val HOME_TEAM_FOULS_AGAINST_LAST_GAME: String = "home_team_fouls_against_last_game"
+  val HOME_TEAM_AVG_FOULS_AGAINST_LAST_3_GAMES: String = "home_team_avg_fouls_against_last_3_games"
+  val HOME_TEAM_AVG_FOULS_AGAINST_LAST_5_GAMES: String = "home_team_avg_fouls_against_last_5_games"
+  val HOME_TEAM_OFFSIDE_LAST_GAME: String = "home_team_offside_last_game"
+  val HOME_TEAM_AVG_OFFSIDE_LAST_3_GAMES: String = "home_team_avg_offside_last_3_games"
+  val HOME_TEAM_AVG_OFFSIDE_LAST_5_GAMES: String = "home_team_avg_offside_last_5_games"
+  val HOME_TEAM_OFFSIDE_AGAINST_LAST_GAME: String = "home_team_offside_against_last_game"
+  val HOME_TEAM_AVG_OFFSIDE_AGAINST_LAST_3_GAMES: String = "home_team_avg_offside_against_last_3_games"
+  val HOME_TEAM_AVG_OFFSIDE_AGAINST_LAST_5_GAMES: String = "home_team_avg_offside_against_last_5_games"
+  val HOME_TEAM_MATCH_RESULT_LAST_GAME: String = "home_team_match_result_last_game"
+  val HOME_TEAM_LST_MATCH_RESULT_LAST_3_GAMES: String = "home_team_lst_match_result_last_3_games"
+  val HOME_TEAM_LST_MATCH_RESULT_LAST_5_GAMES: String = "home_team_lst_match_result_last_5_games"
+  val HOME_TEAM_5TH_FROM_LAST_MATCH_RESULT: String = "home_team_5th_from_last_match_result"
+  val HOME_TEAM_4TH_FROM_LAST_MATCH_RESULT: String = "home_team_4th_from_last_match_result"
+  val HOME_TEAM_3RD_FROM_LAST_MATCH_RESULT: String = "home_team_3rd_from_last_match_result"
+  val HOME_TEAM_2ND_FROM_LAST_MATCH_RESULT: String = "home_team_2nd_from_last_match_result"
+  val HOME_TEAM_LAST_MATCH_RESULT: String = "home_team_last_match_result"
+  val HOME_TEAM_HOME_GOALS_LAST_GAME: String = "home_team_home_goals_last_game"
+  val HOME_TEAM_HOME_GOALS_LAST_2_GAMES: String = "home_team_home_goals_last_2_games"
+  val HOME_TEAM_HOME_XG_LAST_GAME: String = "home_team_home_xg_last_game"
+  val HOME_TEAM_HOME_XG_LAST_2_GAMES: String = "home_team_home_xg_last_2_games"
+  val HOME_TEAM_HOME_SHOTS_LAST_GAME: String = "home_team_home_shots_last_game"
+  val HOME_TEAM_HOME_SHOTS_LAST_2_GAMES: String = "home_team_home_shots_last_2_games"
+  val HOME_TEAM_HOME_SHOTSONTARGET_LAST_GAME: String = "home_team_home_shotsontarget_last_game"
+  val HOME_TEAM_HOME_SHOTSONTARGET_LAST_2_GAMES: String = "home_team_home_shotsontarget_last_2_games"
+  val HOME_TEAM_HOME_POSSESSION_LAST_GAME: String = "home_team_home_possession_last_game"
+  val HOME_TEAM_HOME_POSSESSION_LAST_2_GAMES: String = "home_team_home_possession_last_2_games"
+  val HOME_TEAM_HOME_FOULS_LAST_GAME: String = "home_team_home_fouls_last_game"
+  val HOME_TEAM_HOME_FOULS_LAST_2_GAMES: String = "home_team_home_fouls_last_2_games"
+  val HOME_TEAM_HOME_OFFSIDE_LAST_GAME: String = "home_team_home_offside_last_game"
+  val HOME_TEAM_HOME_OFFSIDE_LAST_2_GAMES: String = "home_team_home_offside_last_2_games"
+  val HOME_TEAM_HOME_GOALS_AGAINST_LAST_GAME: String = "home_team_home_goals_against_last_game"
+  val HOME_TEAM_HOME_GOALS_AGAINST_LAST_2_GAMES: String = "home_team_home_goals_against_last_2_games"
+  val HOME_TEAM_HOME_XG_AGAINST_LAST_GAME: String = "home_team_home_xg_against_last_game"
+  val HOME_TEAM_HOME_XG_AGAINST_LAST_2_GAMES: String = "home_team_home_xg_against_last_2_games"
+  val HOME_TEAM_HOME_SHOTS_AGAINST_LAST_GAME: String = "home_team_home_shots_against_last_game"
+  val HOME_TEAM_HOME_SHOTS_AGAINST_LAST_2_GAMES: String = "home_team_home_shots_against_last_2_games"
+  val HOME_TEAM_HOME_POSSESSION_AGAINST_LAST_GAME: String = "home_team_home_possession_against_last_game"
+  val HOME_TEAM_HOME_POSSESSION_AGAINST_LAST_2_GAMES: String = "home_team_home_possession_against_last_2_games"
+  val HOME_TEAM_HOME_FOULS_AGAINST_LAST_GAME: String = "home_team_home_fouls_against_last_game"
+  val HOME_TEAM_HOME_FOULS_AGAINST_LAST_2_GAMES: String = "home_team_home_fouls_against_last_2_games"
+  val HOME_TEAM_HOME_OFFSIDE_AGAINST_LAST_GAME: String = "home_team_home_offside_against_last_game"
+  val HOME_TEAM_HOME_OFFSIDE_AGAINST_LAST_2_GAMES: String = "home_team_home_offside_against_last_2_games"
+  val HOME_TEAM_HOME_MATCH_RESULT_LAST_GAME: String = "home_team_home_match_result_last_game"
+  val HOME_TEAM_LST_HOME_MATCH_RESULT_LAST_2_GAMES: String = "home_team_lst_home_match_result_last_2_games"
+  val HOME_TEAM_HOME_2ND_FROM_LAST_MATCH_RESULT: String = "home_team_home_2nd_from_last_match_result"
+  val HOME_TEAM_HOME_LAST_MATCH_RESULT: String = "home_team_home_last_match_result"
+
+  val AWAY_TEAM_GOALS_SCORED_LAST_GAME: String = "away_team_goals_scored_last_game"
+  val AWAY_TEAM_AVG_GOALS_SCORED_LAST_3_GAMES: String = "away_team_avg_goals_scored_last_3_games"
+  val AWAY_TEAM_AVG_GOALS_SCORED_LAST_5_GAMES: String = "away_team_avg_goals_scored_last_5_games"
+  val AWAY_TEAM_GOALS_SCORED_AGAINST_LAST_GAME: String = "away_team_goals_scored_against_last_game"
+  val AWAY_TEAM_AVG_GOALS_SCORED_AGAINST_LAST_3_GAMES: String = "away_team_avg_goals_scored_against_last_3_games"
+  val AWAY_TEAM_AVG_GOALS_SCORED_AGAINST_LAST_5_GAMES: String = "away_team_avg_goals_scored_against_last_5_games"
+  val AWAY_TEAM_XG_LAST_GAME: String = "away_team_xg_last_game"
+  val AWAY_TEAM_AVG_XG_LAST_3_GAMES: String = "away_team_avg_xg_last_3_games"
+  val AWAY_TEAM_AVG_XG_LAST_5_GAMES: String = "away_team_avg_xg_last_5_games"
+  val AWAY_TEAM_XG_AGAINST_LAST_GAME: String = "away_team_xg_against_last_game"
+  val AWAY_TEAM_AVG_XG_AGAINST_LAST_3_GAMES: String = "away_team_avg_xg_against_last_3_games"
+  val AWAY_TEAM_AVG_XG_AGAINST_LAST_5_GAMES: String = "away_team_avg_xg_against_last_5_games"
+  val AWAY_TEAM_SHOTS_LAST_GAME: String = "away_team_shots_last_game"
+  val AWAY_TEAM_AVG_SHOTS_LAST_3_GAMES: String = "away_team_avg_shots_last_3_games"
+  val AWAY_TEAM_AVG_SHOTS_LAST_5_GAMES: String = "away_team_avg_shots_last_5_games"
+  val AWAY_TEAM_SHOTS_AGAINST_LAST_GAME: String = "away_team_shots_against_last_game"
+  val AWAY_TEAM_AVG_SHOTS_AGAINST_LAST_3_GAMES: String = "away_team_avg_shots_against_last_3_games"
+  val AWAY_TEAM_AVG_SHOTS_AGAINST_LAST_5_GAMES: String = "away_team_avg_shots_against_last_5_games"
+  val AWAY_TEAM_SHOTSONTARGET_LAST_GAME: String = "away_team_shotsontarget_last_game"
+  val AWAY_TEAM_AVG_SHOTSONTARGET_LAST_3_GAMES: String = "away_team_avg_shotsontarget_last_3_games"
+  val AWAY_TEAM_AVG_SHOTSONTARGET_LAST_5_GAMES: String = "away_team_avg_shotsontarget_last_5_games"
+  val AWAY_TEAM_SHOTSONTARGET_AGAINST_LAST_GAME: String = "away_team_shotsontarget_against_last_game"
+  val AWAY_TEAM_AVG_SHOTSONTARGET_AGAINST_LAST_3_GAMES: String = "away_team_avg_shotsontarget_against_last_3_games"
+  val AWAY_TEAM_AVG_SHOTSONTARGET_AGAINST_LAST_5_GAMES: String = "away_team_avg_shotsontarget_against_last_5_games"
+  val AWAY_TEAM_POSSESSION_LAST_GAME: String = "away_team_possession_last_game"
+  val AWAY_TEAM_AVG_POSSESSION_LAST_3_GAMES: String = "away_team_avg_possession_last_3_games"
+  val AWAY_TEAM_AVG_POSSESSION_LAST_5_GAMES: String = "away_team_avg_possession_last_5_games"
+  val AWAY_TEAM_POSSESSION_AGAINST_LAST_GAME: String = "away_team_possession_against_last_game"
+  val AWAY_TEAM_AVG_POSSESSION_AGAINST_LAST_3_GAMES: String = "away_team_avg_possession_against_last_3_games"
+  val AWAY_TEAM_AVG_POSSESSION_AGAINST_LAST_5_GAMES: String = "away_team_avg_possession_against_last_5_games"
+  val AWAY_TEAM_FOULS_LAST_GAME: String = "away_team_fouls_last_game"
+  val AWAY_TEAM_AVG_FOULS_LAST_3_GAMES: String = "away_team_avg_fouls_last_3_games"
+  val AWAY_TEAM_AVG_FOULS_LAST_5_GAMES: String = "away_team_avg_fouls_last_5_games"
+  val AWAY_TEAM_FOULS_AGAINST_LAST_GAME: String = "away_team_fouls_against_last_game"
+  val AWAY_TEAM_AVG_FOULS_AGAINST_LAST_3_GAMES: String = "away_team_avg_fouls_against_last_3_games"
+  val AWAY_TEAM_AVG_FOULS_AGAINST_LAST_5_GAMES: String = "away_team_avg_fouls_against_last_5_games"
+  val AWAY_TEAM_OFFSIDE_LAST_GAME: String = "away_team_offside_last_game"
+  val AWAY_TEAM_AVG_OFFSIDE_LAST_3_GAMES: String = "away_team_avg_offside_last_3_games"
+  val AWAY_TEAM_AVG_OFFSIDE_LAST_5_GAMES: String = "away_team_avg_offside_last_5_games"
+  val AWAY_TEAM_OFFSIDE_AGAINST_LAST_GAME: String = "away_team_offside_against_last_game"
+  val AWAY_TEAM_AVG_OFFSIDE_AGAINST_LAST_3_GAMES: String = "away_team_avg_offside_against_last_3_games"
+  val AWAY_TEAM_AVG_OFFSIDE_AGAINST_LAST_5_GAMES: String = "away_team_avg_offside_against_last_5_games"
+  val AWAY_TEAM_MATCH_RESULT_LAST_GAME: String = "away_team_match_result_last_game"
+  val AWAY_TEAM_LST_MATCH_RESULT_LAST_3_GAMES: String = "away_team_lst_match_result_last_3_games"
+  val AWAY_TEAM_LST_MATCH_RESULT_LAST_5_GAMES: String = "away_team_lst_match_result_last_5_games"
+  val AWAY_TEAM_5TH_FROM_LAST_MATCH_RESULT: String = "away_team_5th_from_last_match_result"
+  val AWAY_TEAM_4TH_FROM_LAST_MATCH_RESULT: String = "away_team_4th_from_last_match_result"
+  val AWAY_TEAM_3RD_FROM_LAST_MATCH_RESULT: String = "away_team_3rd_from_last_match_result"
+  val AWAY_TEAM_2ND_FROM_LAST_MATCH_RESULT: String = "away_team_2nd_from_last_match_result"
+  val AWAY_TEAM_LAST_MATCH_RESULT: String = "away_team_last_match_result"
+  val AWAY_TEAM_AWAY_XG_LAST_GAME: String = "away_team_away_xg_last_game"
+  val AWAY_TEAM_AWAY_XG_LAST_2_GAMES: String = "away_team_away_xg_last_2_games"
+  val AWAY_TEAM_AWAY_SHOTS_LAST_GAME: String = "away_team_away_shots_last_game"
+  val AWAY_TEAM_AWAY_SHOTS_LAST_2_GAMES: String = "away_team_away_shots_last_2_games"
+  val AWAY_TEAM_AWAY_SHOTSONTARGET_LAST_GAME: String = "away_team_away_shotsontarget_last_game"
+  val AWAY_TEAM_AWAY_SHOTSONTARGET_LAST_2_GAMES: String = "away_team_away_shotsontarget_last_2_games"
+  val AWAY_TEAM_AWAY_POSSESSION_LAST_GAME: String = "away_team_away_possession_last_game"
+  val AWAY_TEAM_AWAY_POSSESSION_LAST_2_GAMES: String = "away_team_away_possession_last_2_games"
+  val AWAY_TEAM_AWAY_FOULS_LAST_GAME: String = "away_team_away_fouls_last_game"
+  val AWAY_TEAM_AWAY_FOULS_LAST_2_GAMES: String = "away_team_away_fouls_last_2_games"
+  val AWAY_TEAM_AWAY_OFFSIDE_LAST_GAME: String = "away_team_away_offside_last_game"
+  val AWAY_TEAM_AWAY_OFFSIDE_LAST_2_GAMES: String = "away_team_away_offside_last_2_games"
+  val AWAY_TEAM_AWAY_GOALS_AGAINST_LAST_GAME: String = "away_team_away_goals_against_last_game"
+  val AWAY_TEAM_AWAY_GOALS_AGAINST_LAST_2_GAMES: String = "away_team_away_goals_against_last_2_games"
+  val AWAY_TEAM_AWAY_XG_AGAINST_LAST_GAME: String = "away_team_away_xg_against_last_game"
+  val AWAY_TEAM_AWAY_XG_AGAINST_LAST_2_GAMES: String = "away_team_away_xg_against_last_2_games"
+  val AWAY_TEAM_AWAY_SHOTS_AGAINST_LAST_GAME: String = "away_team_away_shots_against_last_game"
+  val AWAY_TEAM_AWAY_SHOTS_AGAINST_LAST_2_GAMES: String = "away_team_away_shots_against_last_2_games"
+  val AWAY_TEAM_AWAY_POSSESSION_AGAINST_LAST_GAME: String = "away_team_away_possession_against_last_game"
+  val AWAY_TEAM_AWAY_POSSESSION_AGAINST_LAST_2_GAMES: String = "away_team_away_possession_against_last_2_games"
+  val AWAY_TEAM_AWAY_FOULS_AGAINST_LAST_GAME: String = "away_team_away_fouls_against_last_game"
+  val AWAY_TEAM_AWAY_FOULS_AGAINST_LAST_2_GAMES: String = "away_team_away_fouls_against_last_2_games"
+  val AWAY_TEAM_AWAY_OFFSIDE_AGAINST_LAST_GAME: String = "away_team_away_offside_against_last_game"
+  val AWAY_TEAM_AWAY_OFFSIDE_AGAINST_LAST_2_GAMES: String = "away_team_away_offside_against_last_2_games"
+  val AWAY_TEAM_AWAY_MATCH_RESULT_LAST_GAME: String = "away_team_away_match_result_last_game"
+  val AWAY_TEAM_LST_AWAY_MATCH_RESULT_LAST_2_GAMES: String = "away_team_lst_away_match_result_last_2_games"
+
+
+  val LST_HOME_TEAM_HOME_MATCH_RESULT_LAST_2_GAMES: String = "lst_home_team_home_match_result_last_2_games"
+  val LST_AWAY_TEAM_AWAY_MATCH_RESULT_LAST_2_GAMES: String = "lst_away_team_away_match_result_last_2_games"
+  val AWAY_TEAM_AWAY_GOALS_LAST_GAME: String = "away_team_away_goals_last_game"
+  val AWAY_TEAM_AWAY_GOALS_LAST_2_GAMES: String = "away_team_away_goals_last_2_games"
+
+  val GOALS_SCORED_LAST_GAME: String = "goals_scored_last_game"
+  val AVG_GOALS_SCORED_LAST_3_GAMES: String = "avg_goals_scored_last_3_games"
+  val AVG_GOALS_SCORED_LAST_5_GAMES: String = "avg_goals_scored_last_5_games"
+  val GOALS_SCORED_AGAINST_LAST_GAME: String = "goals_scored_against_last_game"
+  val AVG_GOALS_SCORED_AGAINST_LAST_3_GAMES: String = "avg_goals_scored_against_last_3_games"
+  val AVG_GOALS_SCORED_AGAINST_LAST_5_GAMES: String = "avg_goals_scored_against_last_5_games"
+  val XG_LAST_GAME: String = "xg_last_game"
+  val AVG_XG_LAST_3_GAMES: String = "avg_xg_last_3_games"
+  val AVG_XG_LAST_5_GAMES: String = "avg_xg_last_5_games"
+  val XG_AGAINST_LAST_GAME: String = "xg_against_last_game"
+  val AVG_XG_AGAINST_LAST_3_GAMES: String = "avg_xg_against_last_3_games"
+  val AVG_XG_AGAINST_LAST_5_GAMES: String = "avg_xg_against_last_5_games"
+  val SHOTS_LAST_GAME: String = "shots_last_game"
+  val AVG_SHOTS_LAST_3_GAMES: String = "avg_shots_last_3_games"
+  val AVG_SHOTS_LAST_5_GAMES: String = "avg_shots_last_5_games"
+  val SHOTS_AGAINST_LAST_GAME: String = "shots_against_last_game"
+  val AVG_SHOTS_AGAINST_LAST_3_GAMES: String = "avg_shots_against_last_3_games"
+  val AVG_SHOTS_AGAINST_LAST_5_GAMES: String = "avg_shots_against_last_5_games"
+  val SHOTSONTARGET_LAST_GAME: String = "shotsontarget_last_game"
+  val AVG_SHOTSONTARGET_LAST_3_GAMES: String = "avg_shotsontarget_last_3_games"
+  val AVG_SHOTSONTARGET_LAST_5_GAMES: String = "avg_shotsontarget_last_5_games"
+  val SHOTSONTARGET_AGAINST_LAST_GAME: String = "shotsontarget_against_last_game"
+  val AVG_SHOTSONTARGET_AGAINST_LAST_3_GAMES: String = "avg_shotsontarget_against_last_3_games"
+  val AVG_SHOTSONTARGET_AGAINST_LAST_5_GAMES: String = "avg_shotsontarget_against_last_5_games"
+  val POSSESSION_LAST_GAME: String = "possession_last_game"
+  val AVG_POSSESSION_LAST_3_GAMES: String = "avg_possession_last_3_games"
+  val AVG_POSSESSION_LAST_5_GAMES: String = "avg_possession_last_5_games"
+  val POSSESSION_AGAINST_LAST_GAME: String = "possession_against_last_game"
+  val AVG_POSSESSION_AGAINST_LAST_3_GAMES: String = "avg_possession_against_last_3_games"
+  val AVG_POSSESSION_AGAINST_LAST_5_GAMES: String = "avg_possession_against_last_5_games"
+  val FOULS_LAST_GAME: String = "fouls_last_game"
+  val AVG_FOULS_LAST_3_GAMES: String = "avg_fouls_last_3_games"
+  val AVG_FOULS_LAST_5_GAMES: String = "avg_fouls_last_5_games"
+  val FOULS_AGAINST_LAST_GAME: String = "fouls_against_last_game"
+  val AVG_FOULS_AGAINST_LAST_3_GAMES: String = "avg_fouls_against_last_3_games"
+  val AVG_FOULS_AGAINST_LAST_5_GAMES: String = "avg_fouls_against_last_5_games"
+  val OFFSIDE_LAST_GAME: String = "offside_last_game"
+  val AVG_OFFSIDE_LAST_3_GAMES: String = "avg_offside_last_3_games"
+  val AVG_OFFSIDE_LAST_5_GAMES: String = "avg_offside_last_5_games"
+  val OFFSIDE_AGAINST_LAST_GAME: String = "offside_against_last_game"
+  val AVG_OFFSIDE_AGAINST_LAST_3_GAMES: String = "avg_offside_against_last_3_games"
+  val AVG_OFFSIDE_AGAINST_LAST_5_GAMES: String = "avg_offside_against_last_5_games"
+  val MATCH_RESULT_LAST_GAME: String = "match_result_last_game"
+  val LST_MATCH_RESULT_LAST_3_GAMES: String = "lst_match_result_last_3_games"
+  val LST_MATCH_RESULT_LAST_5_GAMES: String = "lst_match_result_last_5_games"
+  val AWAY_TEAM_AWAY_2ND_FROM_LAST_MATCH_RESULT: String = "away_team_away_2nd_from_last_match_result"
+  val AWAY_TEAM_AWAY_LAST_MATCH_RESULT: String = "away_team_away_last_match_result"
+
+
+  val ALL_GAMES_TRANSFORMATION_COLUMNS: List[String] = List(
+    GAME_DATETIME,
+    TEAM,
+    PLAYED_AT,
+    GOALS_SCORED_LAST_GAME,
+    AVG_GOALS_SCORED_LAST_3_GAMES,
+    AVG_GOALS_SCORED_LAST_5_GAMES,
+    GOALS_SCORED_AGAINST_LAST_GAME,
+    AVG_GOALS_SCORED_AGAINST_LAST_3_GAMES,
+    AVG_GOALS_SCORED_AGAINST_LAST_5_GAMES,
+    XG_LAST_GAME,
+    AVG_XG_LAST_3_GAMES,
+    AVG_XG_LAST_5_GAMES,
+    XG_AGAINST_LAST_GAME,
+    AVG_XG_AGAINST_LAST_3_GAMES,
+    AVG_XG_AGAINST_LAST_5_GAMES,
+    SHOTS_LAST_GAME,
+    AVG_SHOTS_LAST_3_GAMES,
+    AVG_SHOTS_LAST_5_GAMES,
+    SHOTS_AGAINST_LAST_GAME,
+    AVG_SHOTS_AGAINST_LAST_3_GAMES,
+    AVG_SHOTS_AGAINST_LAST_5_GAMES,
+    SHOTSONTARGET_LAST_GAME,
+    AVG_SHOTSONTARGET_LAST_3_GAMES,
+    AVG_SHOTSONTARGET_LAST_5_GAMES,
+    SHOTSONTARGET_AGAINST_LAST_GAME,
+    AVG_SHOTSONTARGET_AGAINST_LAST_3_GAMES,
+    AVG_SHOTSONTARGET_AGAINST_LAST_5_GAMES,
+    POSSESSION_LAST_GAME,
+    AVG_POSSESSION_LAST_3_GAMES,
+    AVG_POSSESSION_LAST_5_GAMES,
+    POSSESSION_AGAINST_LAST_GAME,
+    AVG_POSSESSION_AGAINST_LAST_3_GAMES,
+    AVG_POSSESSION_AGAINST_LAST_5_GAMES,
+    FOULS_LAST_GAME,
+    AVG_FOULS_LAST_3_GAMES,
+    AVG_FOULS_LAST_5_GAMES,
+    FOULS_AGAINST_LAST_GAME,
+    AVG_FOULS_AGAINST_LAST_3_GAMES,
+    AVG_FOULS_AGAINST_LAST_5_GAMES,
+    OFFSIDE_LAST_GAME,
+    AVG_OFFSIDE_LAST_3_GAMES,
+    AVG_OFFSIDE_LAST_5_GAMES,
+    OFFSIDE_AGAINST_LAST_GAME,
+    AVG_OFFSIDE_AGAINST_LAST_3_GAMES,
+    AVG_OFFSIDE_AGAINST_LAST_5_GAMES,
+    LST_MATCH_RESULT_LAST_5_GAMES,
+    MATCH_RESULT
+  )
+
+  val AWAY_HOME_GAMES_TRANSFORMATION_COLUMNS: List[String] = List(
+    SEASON,
+    GAME_DATETIME,
+    GAME_DATE,
+    GAME_TIME,
+    HOME_TEAM,
+    AWAY_TEAM,
+    HOME_TEAM_HOME_GOALS_LAST_GAME,
+    HOME_TEAM_HOME_GOALS_LAST_2_GAMES,
+    AWAY_TEAM_AWAY_GOALS_LAST_GAME,
+    AWAY_TEAM_AWAY_GOALS_LAST_2_GAMES,
+    HOME_TEAM_HOME_XG_LAST_GAME,
+    HOME_TEAM_HOME_XG_LAST_2_GAMES,
+    AWAY_TEAM_AWAY_XG_LAST_GAME,
+    AWAY_TEAM_AWAY_XG_LAST_2_GAMES,
+    HOME_TEAM_HOME_SHOTS_LAST_GAME,
+    HOME_TEAM_HOME_SHOTS_LAST_2_GAMES,
+    AWAY_TEAM_AWAY_SHOTS_LAST_GAME,
+    AWAY_TEAM_AWAY_SHOTS_LAST_2_GAMES,
+    HOME_TEAM_HOME_SHOTSONTARGET_LAST_GAME,
+    HOME_TEAM_HOME_SHOTSONTARGET_LAST_2_GAMES,
+    AWAY_TEAM_AWAY_SHOTSONTARGET_LAST_GAME,
+    AWAY_TEAM_AWAY_SHOTSONTARGET_LAST_2_GAMES,
+    HOME_TEAM_HOME_POSSESSION_LAST_GAME,
+    HOME_TEAM_HOME_POSSESSION_LAST_2_GAMES,
+    AWAY_TEAM_AWAY_POSSESSION_LAST_GAME,
+    AWAY_TEAM_AWAY_POSSESSION_LAST_2_GAMES,
+    HOME_TEAM_HOME_FOULS_LAST_GAME,
+    HOME_TEAM_HOME_FOULS_LAST_2_GAMES,
+    AWAY_TEAM_AWAY_FOULS_LAST_GAME,
+    AWAY_TEAM_AWAY_FOULS_LAST_2_GAMES,
+    HOME_TEAM_HOME_OFFSIDE_LAST_GAME,
+    HOME_TEAM_HOME_OFFSIDE_LAST_2_GAMES,
+    AWAY_TEAM_AWAY_OFFSIDE_LAST_GAME,
+    AWAY_TEAM_AWAY_OFFSIDE_LAST_2_GAMES,
+    AWAY_TEAM_AWAY_GOALS_AGAINST_LAST_GAME,
+    AWAY_TEAM_AWAY_GOALS_AGAINST_LAST_2_GAMES,
+    HOME_TEAM_HOME_GOALS_AGAINST_LAST_GAME,
+    HOME_TEAM_HOME_GOALS_AGAINST_LAST_2_GAMES,
+    AWAY_TEAM_AWAY_XG_AGAINST_LAST_GAME,
+    AWAY_TEAM_AWAY_XG_AGAINST_LAST_2_GAMES,
+    HOME_TEAM_HOME_XG_AGAINST_LAST_GAME,
+    HOME_TEAM_HOME_XG_AGAINST_LAST_2_GAMES,
+    AWAY_TEAM_AWAY_SHOTS_AGAINST_LAST_GAME,
+    AWAY_TEAM_AWAY_SHOTS_AGAINST_LAST_2_GAMES,
+    HOME_TEAM_HOME_SHOTS_AGAINST_LAST_GAME,
+    HOME_TEAM_HOME_SHOTS_AGAINST_LAST_2_GAMES,
+    AWAY_TEAM_AWAY_POSSESSION_AGAINST_LAST_GAME,
+    AWAY_TEAM_AWAY_POSSESSION_AGAINST_LAST_2_GAMES,
+    HOME_TEAM_HOME_POSSESSION_AGAINST_LAST_GAME,
+    HOME_TEAM_HOME_POSSESSION_AGAINST_LAST_2_GAMES,
+    AWAY_TEAM_AWAY_FOULS_AGAINST_LAST_GAME,
+    AWAY_TEAM_AWAY_FOULS_AGAINST_LAST_2_GAMES,
+    HOME_TEAM_HOME_FOULS_AGAINST_LAST_GAME,
+    HOME_TEAM_HOME_FOULS_AGAINST_LAST_2_GAMES,
+    AWAY_TEAM_AWAY_OFFSIDE_AGAINST_LAST_GAME,
+    AWAY_TEAM_AWAY_OFFSIDE_AGAINST_LAST_2_GAMES,
+    HOME_TEAM_HOME_OFFSIDE_AGAINST_LAST_GAME,
+    HOME_TEAM_HOME_OFFSIDE_AGAINST_LAST_2_GAMES,
+    LST_HOME_TEAM_HOME_MATCH_RESULT_LAST_2_GAMES,
+    LST_AWAY_TEAM_AWAY_MATCH_RESULT_LAST_2_GAMES,
+    MATCH_RESULT
+  )
+
+  val JOINED_TABLE_COLUMNS = List(
+    SEASON,
+    GAME_DATETIME,
+    GAME_DATE,
+    GAME_TIME,
+    HOME_TEAM,
+    AWAY_TEAM,
+
+    HOME_TEAM_GOALS_SCORED_LAST_GAME,
+    HOME_TEAM_AVG_GOALS_SCORED_LAST_3_GAMES,
+    HOME_TEAM_AVG_GOALS_SCORED_LAST_5_GAMES,
+    HOME_TEAM_GOALS_SCORED_AGAINST_LAST_GAME,
+    HOME_TEAM_AVG_GOALS_SCORED_AGAINST_LAST_3_GAMES,
+    HOME_TEAM_AVG_GOALS_SCORED_AGAINST_LAST_5_GAMES,
+    HOME_TEAM_XG_LAST_GAME,
+    HOME_TEAM_AVG_XG_LAST_3_GAMES,
+    HOME_TEAM_AVG_XG_LAST_5_GAMES,
+    HOME_TEAM_XG_AGAINST_LAST_GAME,
+    HOME_TEAM_AVG_XG_AGAINST_LAST_3_GAMES,
+    HOME_TEAM_AVG_XG_AGAINST_LAST_5_GAMES,
+    HOME_TEAM_SHOTS_LAST_GAME,
+    HOME_TEAM_AVG_SHOTS_LAST_3_GAMES,
+    HOME_TEAM_AVG_SHOTS_LAST_5_GAMES,
+    HOME_TEAM_SHOTS_AGAINST_LAST_GAME,
+    HOME_TEAM_AVG_SHOTS_AGAINST_LAST_3_GAMES,
+    HOME_TEAM_AVG_SHOTS_AGAINST_LAST_5_GAMES,
+    HOME_TEAM_SHOTSONTARGET_LAST_GAME,
+    HOME_TEAM_AVG_SHOTSONTARGET_LAST_3_GAMES,
+    HOME_TEAM_AVG_SHOTSONTARGET_LAST_5_GAMES,
+    HOME_TEAM_SHOTSONTARGET_AGAINST_LAST_GAME,
+    HOME_TEAM_AVG_SHOTSONTARGET_AGAINST_LAST_3_GAMES,
+    HOME_TEAM_AVG_SHOTSONTARGET_AGAINST_LAST_5_GAMES,
+    HOME_TEAM_POSSESSION_LAST_GAME,
+    HOME_TEAM_AVG_POSSESSION_LAST_3_GAMES,
+    HOME_TEAM_AVG_POSSESSION_LAST_5_GAMES,
+    HOME_TEAM_POSSESSION_AGAINST_LAST_GAME,
+    HOME_TEAM_AVG_POSSESSION_AGAINST_LAST_3_GAMES,
+    HOME_TEAM_AVG_POSSESSION_AGAINST_LAST_5_GAMES,
+    HOME_TEAM_FOULS_LAST_GAME,
+    HOME_TEAM_AVG_FOULS_LAST_3_GAMES,
+    HOME_TEAM_AVG_FOULS_LAST_5_GAMES,
+    HOME_TEAM_FOULS_AGAINST_LAST_GAME,
+    HOME_TEAM_AVG_FOULS_AGAINST_LAST_3_GAMES,
+    HOME_TEAM_AVG_FOULS_AGAINST_LAST_5_GAMES,
+    HOME_TEAM_OFFSIDE_LAST_GAME,
+    HOME_TEAM_AVG_OFFSIDE_LAST_3_GAMES,
+    HOME_TEAM_AVG_OFFSIDE_LAST_5_GAMES,
+    HOME_TEAM_OFFSIDE_AGAINST_LAST_GAME,
+    HOME_TEAM_AVG_OFFSIDE_AGAINST_LAST_3_GAMES,
+    HOME_TEAM_AVG_OFFSIDE_AGAINST_LAST_5_GAMES,
+    HOME_TEAM_LST_MATCH_RESULT_LAST_5_GAMES,
+    HOME_TEAM_HOME_GOALS_LAST_GAME,
+    HOME_TEAM_HOME_GOALS_LAST_2_GAMES,
+    HOME_TEAM_HOME_XG_LAST_GAME,
+    HOME_TEAM_HOME_XG_LAST_2_GAMES,
+    HOME_TEAM_HOME_SHOTS_LAST_GAME,
+    HOME_TEAM_HOME_SHOTS_LAST_2_GAMES,
+    HOME_TEAM_HOME_SHOTSONTARGET_LAST_GAME,
+    HOME_TEAM_HOME_SHOTSONTARGET_LAST_2_GAMES,
+    HOME_TEAM_HOME_POSSESSION_LAST_GAME,
+    HOME_TEAM_HOME_POSSESSION_LAST_2_GAMES,
+    HOME_TEAM_HOME_FOULS_LAST_GAME,
+    HOME_TEAM_HOME_FOULS_LAST_2_GAMES,
+    HOME_TEAM_HOME_OFFSIDE_LAST_GAME,
+    HOME_TEAM_HOME_OFFSIDE_LAST_2_GAMES,
+    HOME_TEAM_HOME_GOALS_AGAINST_LAST_GAME,
+    HOME_TEAM_HOME_GOALS_AGAINST_LAST_2_GAMES,
+    HOME_TEAM_HOME_XG_AGAINST_LAST_GAME,
+    HOME_TEAM_HOME_XG_AGAINST_LAST_2_GAMES,
+    HOME_TEAM_HOME_SHOTS_AGAINST_LAST_GAME,
+    HOME_TEAM_HOME_SHOTS_AGAINST_LAST_2_GAMES,
+    HOME_TEAM_HOME_POSSESSION_AGAINST_LAST_GAME,
+    HOME_TEAM_HOME_POSSESSION_AGAINST_LAST_2_GAMES,
+    HOME_TEAM_HOME_FOULS_AGAINST_LAST_GAME,
+    HOME_TEAM_HOME_FOULS_AGAINST_LAST_2_GAMES,
+    HOME_TEAM_HOME_OFFSIDE_AGAINST_LAST_GAME,
+    HOME_TEAM_HOME_OFFSIDE_AGAINST_LAST_2_GAMES,
+    HOME_TEAM_LST_HOME_MATCH_RESULT_LAST_2_GAMES,
+
+    AWAY_TEAM_GOALS_SCORED_LAST_GAME,
+    AWAY_TEAM_AVG_GOALS_SCORED_LAST_3_GAMES,
+    AWAY_TEAM_AVG_GOALS_SCORED_LAST_5_GAMES,
+    AWAY_TEAM_GOALS_SCORED_AGAINST_LAST_GAME,
+    AWAY_TEAM_AVG_GOALS_SCORED_AGAINST_LAST_3_GAMES,
+    AWAY_TEAM_AVG_GOALS_SCORED_AGAINST_LAST_5_GAMES,
+    AWAY_TEAM_XG_LAST_GAME,
+    AWAY_TEAM_AVG_XG_LAST_3_GAMES,
+    AWAY_TEAM_AVG_XG_LAST_5_GAMES,
+    AWAY_TEAM_XG_AGAINST_LAST_GAME,
+    AWAY_TEAM_AVG_XG_AGAINST_LAST_3_GAMES,
+    AWAY_TEAM_AVG_XG_AGAINST_LAST_5_GAMES,
+    AWAY_TEAM_SHOTS_LAST_GAME,
+    AWAY_TEAM_AVG_SHOTS_LAST_3_GAMES,
+    AWAY_TEAM_AVG_SHOTS_LAST_5_GAMES,
+    AWAY_TEAM_SHOTS_AGAINST_LAST_GAME,
+    AWAY_TEAM_AVG_SHOTS_AGAINST_LAST_3_GAMES,
+    AWAY_TEAM_AVG_SHOTS_AGAINST_LAST_5_GAMES,
+    AWAY_TEAM_SHOTSONTARGET_LAST_GAME,
+    AWAY_TEAM_AVG_SHOTSONTARGET_LAST_3_GAMES,
+    AWAY_TEAM_AVG_SHOTSONTARGET_LAST_5_GAMES,
+    AWAY_TEAM_SHOTSONTARGET_AGAINST_LAST_GAME,
+    AWAY_TEAM_AVG_SHOTSONTARGET_AGAINST_LAST_3_GAMES,
+    AWAY_TEAM_AVG_SHOTSONTARGET_AGAINST_LAST_5_GAMES,
+    AWAY_TEAM_POSSESSION_LAST_GAME,
+    AWAY_TEAM_AVG_POSSESSION_LAST_3_GAMES,
+    AWAY_TEAM_AVG_POSSESSION_LAST_5_GAMES,
+    AWAY_TEAM_POSSESSION_AGAINST_LAST_GAME,
+    AWAY_TEAM_AVG_POSSESSION_AGAINST_LAST_3_GAMES,
+    AWAY_TEAM_AVG_POSSESSION_AGAINST_LAST_5_GAMES,
+    AWAY_TEAM_FOULS_LAST_GAME,
+    AWAY_TEAM_AVG_FOULS_LAST_3_GAMES,
+    AWAY_TEAM_AVG_FOULS_LAST_5_GAMES,
+    AWAY_TEAM_FOULS_AGAINST_LAST_GAME,
+    AWAY_TEAM_AVG_FOULS_AGAINST_LAST_3_GAMES,
+    AWAY_TEAM_AVG_FOULS_AGAINST_LAST_5_GAMES,
+    AWAY_TEAM_OFFSIDE_LAST_GAME,
+    AWAY_TEAM_AVG_OFFSIDE_LAST_3_GAMES,
+    AWAY_TEAM_AVG_OFFSIDE_LAST_5_GAMES,
+    AWAY_TEAM_OFFSIDE_AGAINST_LAST_GAME,
+    AWAY_TEAM_AVG_OFFSIDE_AGAINST_LAST_3_GAMES,
+    AWAY_TEAM_AVG_OFFSIDE_AGAINST_LAST_5_GAMES,
+    AWAY_TEAM_LST_MATCH_RESULT_LAST_5_GAMES,
+    AWAY_TEAM_AWAY_XG_LAST_GAME,
+    AWAY_TEAM_AWAY_XG_LAST_2_GAMES,
+    AWAY_TEAM_AWAY_SHOTS_LAST_GAME,
+    AWAY_TEAM_AWAY_SHOTS_LAST_2_GAMES,
+    AWAY_TEAM_AWAY_SHOTSONTARGET_LAST_GAME,
+    AWAY_TEAM_AWAY_SHOTSONTARGET_LAST_2_GAMES,
+    AWAY_TEAM_AWAY_POSSESSION_LAST_GAME,
+    AWAY_TEAM_AWAY_POSSESSION_LAST_2_GAMES,
+    AWAY_TEAM_AWAY_FOULS_LAST_GAME,
+    AWAY_TEAM_AWAY_FOULS_LAST_2_GAMES,
+    AWAY_TEAM_AWAY_OFFSIDE_LAST_GAME,
+    AWAY_TEAM_AWAY_OFFSIDE_LAST_2_GAMES,
+    AWAY_TEAM_AWAY_GOALS_AGAINST_LAST_GAME,
+    AWAY_TEAM_AWAY_GOALS_AGAINST_LAST_2_GAMES,
+    AWAY_TEAM_AWAY_XG_AGAINST_LAST_GAME,
+    AWAY_TEAM_AWAY_XG_AGAINST_LAST_2_GAMES,
+    AWAY_TEAM_AWAY_SHOTS_AGAINST_LAST_GAME,
+    AWAY_TEAM_AWAY_SHOTS_AGAINST_LAST_2_GAMES,
+    AWAY_TEAM_AWAY_POSSESSION_AGAINST_LAST_GAME,
+    AWAY_TEAM_AWAY_POSSESSION_AGAINST_LAST_2_GAMES,
+    AWAY_TEAM_AWAY_FOULS_AGAINST_LAST_GAME,
+    AWAY_TEAM_AWAY_FOULS_AGAINST_LAST_2_GAMES,
+    AWAY_TEAM_AWAY_OFFSIDE_AGAINST_LAST_GAME,
+    AWAY_TEAM_AWAY_OFFSIDE_AGAINST_LAST_2_GAMES,
+    AWAY_TEAM_LST_AWAY_MATCH_RESULT_LAST_2_GAMES,
+
+    MATCH_RESULT
+  )
+
+  val FINAL_TABLE_COLUMNS = List(
+    SEASON,
+    GAME_DATETIME,
+    GAME_DATE,
+    GAME_TIME,
+    HOME_TEAM,
+    AWAY_TEAM,
+
+    HOME_TEAM_GOALS_SCORED_LAST_GAME,
+    HOME_TEAM_AVG_GOALS_SCORED_LAST_3_GAMES,
+    HOME_TEAM_AVG_GOALS_SCORED_LAST_5_GAMES,
+    HOME_TEAM_GOALS_SCORED_AGAINST_LAST_GAME,
+    HOME_TEAM_AVG_GOALS_SCORED_AGAINST_LAST_3_GAMES,
+    HOME_TEAM_AVG_GOALS_SCORED_AGAINST_LAST_5_GAMES,
+    HOME_TEAM_XG_LAST_GAME,
+    HOME_TEAM_AVG_XG_LAST_3_GAMES,
+    HOME_TEAM_AVG_XG_LAST_5_GAMES,
+    HOME_TEAM_XG_AGAINST_LAST_GAME,
+    HOME_TEAM_AVG_XG_AGAINST_LAST_3_GAMES,
+    HOME_TEAM_AVG_XG_AGAINST_LAST_5_GAMES,
+    HOME_TEAM_SHOTS_LAST_GAME,
+    HOME_TEAM_AVG_SHOTS_LAST_3_GAMES,
+    HOME_TEAM_AVG_SHOTS_LAST_5_GAMES,
+    HOME_TEAM_SHOTS_AGAINST_LAST_GAME,
+    HOME_TEAM_AVG_SHOTS_AGAINST_LAST_3_GAMES,
+    HOME_TEAM_AVG_SHOTS_AGAINST_LAST_5_GAMES,
+    HOME_TEAM_SHOTSONTARGET_LAST_GAME,
+    HOME_TEAM_AVG_SHOTSONTARGET_LAST_3_GAMES,
+    HOME_TEAM_AVG_SHOTSONTARGET_LAST_5_GAMES,
+    HOME_TEAM_SHOTSONTARGET_AGAINST_LAST_GAME,
+    HOME_TEAM_AVG_SHOTSONTARGET_AGAINST_LAST_3_GAMES,
+    HOME_TEAM_AVG_SHOTSONTARGET_AGAINST_LAST_5_GAMES,
+    HOME_TEAM_POSSESSION_LAST_GAME,
+    HOME_TEAM_AVG_POSSESSION_LAST_3_GAMES,
+    HOME_TEAM_AVG_POSSESSION_LAST_5_GAMES,
+    HOME_TEAM_POSSESSION_AGAINST_LAST_GAME,
+    HOME_TEAM_AVG_POSSESSION_AGAINST_LAST_3_GAMES,
+    HOME_TEAM_AVG_POSSESSION_AGAINST_LAST_5_GAMES,
+    HOME_TEAM_FOULS_LAST_GAME,
+    HOME_TEAM_AVG_FOULS_LAST_3_GAMES,
+    HOME_TEAM_AVG_FOULS_LAST_5_GAMES,
+    HOME_TEAM_FOULS_AGAINST_LAST_GAME,
+    HOME_TEAM_AVG_FOULS_AGAINST_LAST_3_GAMES,
+    HOME_TEAM_AVG_FOULS_AGAINST_LAST_5_GAMES,
+    HOME_TEAM_OFFSIDE_LAST_GAME,
+    HOME_TEAM_AVG_OFFSIDE_LAST_3_GAMES,
+    HOME_TEAM_AVG_OFFSIDE_LAST_5_GAMES,
+    HOME_TEAM_OFFSIDE_AGAINST_LAST_GAME,
+    HOME_TEAM_AVG_OFFSIDE_AGAINST_LAST_3_GAMES,
+    HOME_TEAM_AVG_OFFSIDE_AGAINST_LAST_5_GAMES,
+//    HOME_TEAM_LST_MATCH_RESULT_LAST_5_GAMES,
+    HOME_TEAM_5TH_FROM_LAST_MATCH_RESULT,
+    HOME_TEAM_4TH_FROM_LAST_MATCH_RESULT,
+    HOME_TEAM_3RD_FROM_LAST_MATCH_RESULT,
+    HOME_TEAM_2ND_FROM_LAST_MATCH_RESULT,
+    HOME_TEAM_LAST_MATCH_RESULT,
+    HOME_TEAM_HOME_GOALS_LAST_GAME,
+    HOME_TEAM_HOME_GOALS_LAST_2_GAMES,
+    HOME_TEAM_HOME_XG_LAST_GAME,
+    HOME_TEAM_HOME_XG_LAST_2_GAMES,
+    HOME_TEAM_HOME_SHOTS_LAST_GAME,
+    HOME_TEAM_HOME_SHOTS_LAST_2_GAMES,
+    HOME_TEAM_HOME_SHOTSONTARGET_LAST_GAME,
+    HOME_TEAM_HOME_SHOTSONTARGET_LAST_2_GAMES,
+    HOME_TEAM_HOME_POSSESSION_LAST_GAME,
+    HOME_TEAM_HOME_POSSESSION_LAST_2_GAMES,
+    HOME_TEAM_HOME_FOULS_LAST_GAME,
+    HOME_TEAM_HOME_FOULS_LAST_2_GAMES,
+    HOME_TEAM_HOME_OFFSIDE_LAST_GAME,
+    HOME_TEAM_HOME_OFFSIDE_LAST_2_GAMES,
+    HOME_TEAM_HOME_GOALS_AGAINST_LAST_GAME,
+    HOME_TEAM_HOME_GOALS_AGAINST_LAST_2_GAMES,
+    HOME_TEAM_HOME_XG_AGAINST_LAST_GAME,
+    HOME_TEAM_HOME_XG_AGAINST_LAST_2_GAMES,
+    HOME_TEAM_HOME_SHOTS_AGAINST_LAST_GAME,
+    HOME_TEAM_HOME_SHOTS_AGAINST_LAST_2_GAMES,
+    HOME_TEAM_HOME_POSSESSION_AGAINST_LAST_GAME,
+    HOME_TEAM_HOME_POSSESSION_AGAINST_LAST_2_GAMES,
+    HOME_TEAM_HOME_FOULS_AGAINST_LAST_GAME,
+    HOME_TEAM_HOME_FOULS_AGAINST_LAST_2_GAMES,
+    HOME_TEAM_HOME_OFFSIDE_AGAINST_LAST_GAME,
+    HOME_TEAM_HOME_OFFSIDE_AGAINST_LAST_2_GAMES,
+//    HOME_TEAM_LST_HOME_MATCH_RESULT_LAST_2_GAMES,
+    HOME_TEAM_HOME_2ND_FROM_LAST_MATCH_RESULT,
+    HOME_TEAM_HOME_LAST_MATCH_RESULT,
+
+    AWAY_TEAM_GOALS_SCORED_LAST_GAME,
+    AWAY_TEAM_AVG_GOALS_SCORED_LAST_3_GAMES,
+    AWAY_TEAM_AVG_GOALS_SCORED_LAST_5_GAMES,
+    AWAY_TEAM_GOALS_SCORED_AGAINST_LAST_GAME,
+    AWAY_TEAM_AVG_GOALS_SCORED_AGAINST_LAST_3_GAMES,
+    AWAY_TEAM_AVG_GOALS_SCORED_AGAINST_LAST_5_GAMES,
+    AWAY_TEAM_XG_LAST_GAME,
+    AWAY_TEAM_AVG_XG_LAST_3_GAMES,
+    AWAY_TEAM_AVG_XG_LAST_5_GAMES,
+    AWAY_TEAM_XG_AGAINST_LAST_GAME,
+    AWAY_TEAM_AVG_XG_AGAINST_LAST_3_GAMES,
+    AWAY_TEAM_AVG_XG_AGAINST_LAST_5_GAMES,
+    AWAY_TEAM_SHOTS_LAST_GAME,
+    AWAY_TEAM_AVG_SHOTS_LAST_3_GAMES,
+    AWAY_TEAM_AVG_SHOTS_LAST_5_GAMES,
+    AWAY_TEAM_SHOTS_AGAINST_LAST_GAME,
+    AWAY_TEAM_AVG_SHOTS_AGAINST_LAST_3_GAMES,
+    AWAY_TEAM_AVG_SHOTS_AGAINST_LAST_5_GAMES,
+    AWAY_TEAM_SHOTSONTARGET_LAST_GAME,
+    AWAY_TEAM_AVG_SHOTSONTARGET_LAST_3_GAMES,
+    AWAY_TEAM_AVG_SHOTSONTARGET_LAST_5_GAMES,
+    AWAY_TEAM_SHOTSONTARGET_AGAINST_LAST_GAME,
+    AWAY_TEAM_AVG_SHOTSONTARGET_AGAINST_LAST_3_GAMES,
+    AWAY_TEAM_AVG_SHOTSONTARGET_AGAINST_LAST_5_GAMES,
+    AWAY_TEAM_POSSESSION_LAST_GAME,
+    AWAY_TEAM_AVG_POSSESSION_LAST_3_GAMES,
+    AWAY_TEAM_AVG_POSSESSION_LAST_5_GAMES,
+    AWAY_TEAM_POSSESSION_AGAINST_LAST_GAME,
+    AWAY_TEAM_AVG_POSSESSION_AGAINST_LAST_3_GAMES,
+    AWAY_TEAM_AVG_POSSESSION_AGAINST_LAST_5_GAMES,
+    AWAY_TEAM_FOULS_LAST_GAME,
+    AWAY_TEAM_AVG_FOULS_LAST_3_GAMES,
+    AWAY_TEAM_AVG_FOULS_LAST_5_GAMES,
+    AWAY_TEAM_FOULS_AGAINST_LAST_GAME,
+    AWAY_TEAM_AVG_FOULS_AGAINST_LAST_3_GAMES,
+    AWAY_TEAM_AVG_FOULS_AGAINST_LAST_5_GAMES,
+    AWAY_TEAM_OFFSIDE_LAST_GAME,
+    AWAY_TEAM_AVG_OFFSIDE_LAST_3_GAMES,
+    AWAY_TEAM_AVG_OFFSIDE_LAST_5_GAMES,
+    AWAY_TEAM_OFFSIDE_AGAINST_LAST_GAME,
+    AWAY_TEAM_AVG_OFFSIDE_AGAINST_LAST_3_GAMES,
+    AWAY_TEAM_AVG_OFFSIDE_AGAINST_LAST_5_GAMES,
+//    AWAY_TEAM_LST_MATCH_RESULT_LAST_5_GAMES,
+    AWAY_TEAM_5TH_FROM_LAST_MATCH_RESULT,
+    AWAY_TEAM_4TH_FROM_LAST_MATCH_RESULT,
+    AWAY_TEAM_3RD_FROM_LAST_MATCH_RESULT,
+    AWAY_TEAM_2ND_FROM_LAST_MATCH_RESULT,
+    AWAY_TEAM_LAST_MATCH_RESULT,
+    AWAY_TEAM_AWAY_XG_LAST_GAME,
+    AWAY_TEAM_AWAY_XG_LAST_2_GAMES,
+    AWAY_TEAM_AWAY_SHOTS_LAST_GAME,
+    AWAY_TEAM_AWAY_SHOTS_LAST_2_GAMES,
+    AWAY_TEAM_AWAY_SHOTSONTARGET_LAST_GAME,
+    AWAY_TEAM_AWAY_SHOTSONTARGET_LAST_2_GAMES,
+    AWAY_TEAM_AWAY_POSSESSION_LAST_GAME,
+    AWAY_TEAM_AWAY_POSSESSION_LAST_2_GAMES,
+    AWAY_TEAM_AWAY_FOULS_LAST_GAME,
+    AWAY_TEAM_AWAY_FOULS_LAST_2_GAMES,
+    AWAY_TEAM_AWAY_OFFSIDE_LAST_GAME,
+    AWAY_TEAM_AWAY_OFFSIDE_LAST_2_GAMES,
+    AWAY_TEAM_AWAY_GOALS_AGAINST_LAST_GAME,
+    AWAY_TEAM_AWAY_GOALS_AGAINST_LAST_2_GAMES,
+    AWAY_TEAM_AWAY_XG_AGAINST_LAST_GAME,
+    AWAY_TEAM_AWAY_XG_AGAINST_LAST_2_GAMES,
+    AWAY_TEAM_AWAY_SHOTS_AGAINST_LAST_GAME,
+    AWAY_TEAM_AWAY_SHOTS_AGAINST_LAST_2_GAMES,
+    AWAY_TEAM_AWAY_POSSESSION_AGAINST_LAST_GAME,
+    AWAY_TEAM_AWAY_POSSESSION_AGAINST_LAST_2_GAMES,
+    AWAY_TEAM_AWAY_FOULS_AGAINST_LAST_GAME,
+    AWAY_TEAM_AWAY_FOULS_AGAINST_LAST_2_GAMES,
+    AWAY_TEAM_AWAY_OFFSIDE_AGAINST_LAST_GAME,
+    AWAY_TEAM_AWAY_OFFSIDE_AGAINST_LAST_2_GAMES,
+//    AWAY_TEAM_LST_AWAY_MATCH_RESULT_LAST_2_GAMES,
+    AWAY_TEAM_AWAY_2ND_FROM_LAST_MATCH_RESULT,
+    AWAY_TEAM_AWAY_LAST_MATCH_RESULT,
+
+    MATCH_RESULT
+  )
+
+}
