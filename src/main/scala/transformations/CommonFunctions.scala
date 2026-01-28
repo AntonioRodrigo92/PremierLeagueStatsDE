@@ -1,6 +1,6 @@
 package transformations
 
-import Utils.Constants.GAME_DATETIME
+import Utils.Constants.{GAME_DATETIME, SEASON}
 import org.apache.spark.sql.DataFrame
 import org.apache.spark.sql.expressions.{Window, WindowSpec}
 import org.apache.spark.sql.functions.{avg, col, collect_list}
@@ -11,7 +11,7 @@ object CommonFunctions {
                               outputColumnName: String, lastNEvents: Int)
                              (df: DataFrame): DataFrame = {
     val window: WindowSpec = Window
-      .partitionBy(partitionColumn)
+      .partitionBy(SEASON, partitionColumn)
       .orderBy(col(GAME_DATETIME).asc)
 
     df.withColumn(outputColumnName, avg(baseColumnName).over(window.rowsBetween(-lastNEvents, -1)))
@@ -23,7 +23,7 @@ object CommonFunctions {
 
 
     val window: WindowSpec = Window
-      .partitionBy(partitionColumn)
+      .partitionBy(SEASON, partitionColumn)
       .orderBy(col(GAME_DATETIME).asc)
 
     df.withColumn(outputColumnName, collect_list(baseColumnName).over(window.rowsBetween(-lastNEvents, -1)))
