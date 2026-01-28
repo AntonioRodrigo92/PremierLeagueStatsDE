@@ -49,10 +49,9 @@ object PremierLeagueStatsDE {
 
     }
     catch {
-      case e: Exception => {
+      case e: Exception =>
         println("### ERRO!")
-        println(e)
-      }
+        e.printStackTrace()
     }
     finally {
       SparkUtils.deleteCheckpointDirectory(config.checkpointDir)
