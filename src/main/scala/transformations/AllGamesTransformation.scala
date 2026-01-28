@@ -8,7 +8,7 @@ import transformations.CommonFunctions.{getPreviousNColumnsMean, getPreviousNOcc
 
 object AllGamesTransformation {
 
-  def transform(dataframe: DataFrame) = {
+  def transform(dataframe: DataFrame): DataFrame = {
     val normalizedDF: DataFrame = normalizePerTeamDF(dataframe)
     prevGamesInfoDF(normalizedDF)
       .select(ALL_GAMES_TRANSFORMATION_COLUMNS.head, ALL_GAMES_TRANSFORMATION_COLUMNS.tail: _*)
@@ -88,6 +88,7 @@ object AllGamesTransformation {
     df
       // home team
       .select(
+        col(SEASON),
         col(GAME_DATETIME),
         col(GAME_DATE),
         col(GAME_TIME),
@@ -112,6 +113,7 @@ object AllGamesTransformation {
       //  away team
       .unionAll(
         df.select(
+          col(SEASON),
           col(GAME_DATETIME),
           col(GAME_DATE),
           col(GAME_TIME),

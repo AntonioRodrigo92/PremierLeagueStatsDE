@@ -20,8 +20,6 @@ object CommonFunctions {
   def getPreviousNOccurrencesAsList(partitionColumn: String, baseColumnName: String,
                                     outputColumnName: String, lastNEvents: Int)
                                    (df: DataFrame): DataFrame = {
-
-
     val window: WindowSpec = Window
       .partitionBy(SEASON, partitionColumn)
       .orderBy(col(GAME_DATETIME).asc)
