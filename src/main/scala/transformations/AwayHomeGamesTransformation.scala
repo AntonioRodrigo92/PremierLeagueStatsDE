@@ -2,8 +2,8 @@ package transformations
 
 import Utils.Constants._
 import org.apache.spark.sql.DataFrame
-import org.apache.spark.sql.functions.{col, when}
-import transformations.CommonFunctions.{getPreviousNOccurrencesAsList, getPreviousNColumnsMean}
+import org.apache.spark.sql.functions.{col, lit, when}
+import transformations.CommonFunctions.{getPreviousNColumnsMean, getPreviousNOccurrencesAsList}
 
 object AwayHomeGamesTransformation {
 
@@ -12,8 +12,8 @@ object AwayHomeGamesTransformation {
     prevGamesInfoDF(newColsDF)
       .select(AWAY_HOME_GAMES_TRANSFORMATION_COLUMNS.head, AWAY_HOME_GAMES_TRANSFORMATION_COLUMNS.tail: _*)
   }
-  
-  private def addNewCols(df: DataFrame) = {
+
+  private def addNewCols(df: DataFrame): DataFrame = {
     df
       .withColumn(AWAY_TEAM_GOALS_AGAINST, col(HOME_TEAM_GOALS))
       .withColumn(HOME_TEAM_GOALS_AGAINST, col(AWAY_TEAM_GOALS))
@@ -30,7 +30,8 @@ object AwayHomeGamesTransformation {
       .withColumn(AWAY_TEAM_OFFSIDE_AGAINST, col(HOME_TEAM_OFFSIDE))
       .withColumn(HOME_TEAM_OFFSIDE_AGAINST, col(AWAY_TEAM_OFFSIDE))
       .withColumn(MATCH_RESULT,
-        when(col(HOME_TEAM_GOALS) > col(AWAY_TEAM_GOALS), HOME_TEAM_WIN)
+        when(col(HOME_TEAM_GOALS).isNull || col(AWAY_TEAM_GOALS).isNull, lit(null))
+          .when(col(HOME_TEAM_GOALS) > col(AWAY_TEAM_GOALS), HOME_TEAM_WIN)
           .when(col(AWAY_TEAM_GOALS) > col(HOME_TEAM_GOALS), AWAY_TEAM_WIN)
           .otherwise(DRAW)
       )

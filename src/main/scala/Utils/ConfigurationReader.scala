@@ -17,7 +17,7 @@ case class ConfigurationReader(path: String) {
   val mariadbUser: String = mariadb.getString("user")
   val mariadbPassword: String = mariadb.getString("password")
   val mariadbSrcTablesName: ConfigList = mariadb.getList("src_tables_name")
-  val mariadbPredictTableName: String = mariadb.getString("predict_table_name")
+  val mariadbUnplayedGamesTableName: String = mariadb.getString("unplayed_games_table_name")
   val minioDestTableName: String = minio.getString("dest_table_name")
   val checkpointDir: String = spark.getString("checkpoint_dir")
 

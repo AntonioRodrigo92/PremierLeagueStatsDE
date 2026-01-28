@@ -1,11 +1,11 @@
 import Utils.Constants.SEASON
 import Utils.{ConfigurationReader, IOStuff, SparkUtils}
+import input.DataLoader
 import org.apache.spark.SparkContext
 import org.apache.spark.sql.{DataFrame, SparkSession}
 import transformations.{AllGamesTransformation, ArrayColumnToColumns, AwayHomeGamesTransformation, JoinTables}
 
 import java.util.Properties
-import scala.collection.convert.ImplicitConversions.`iterable AsScalaIterable`
 
 object PremierLeagueStatsDE {
 
@@ -22,14 +22,10 @@ object PremierLeagueStatsDE {
 
     try {
 
-      val inputDFs: Iterable[DataFrame] = config.mariadbSrcTablesName
-      .filter(e => config.jsonToElements(e)._1)
-      .map(e => spark.read.jdbc(mariaDBConnection._1, config.jsonToElements(e)._2, mariaDBConnection._2))
+      val inputMatchesDF: DataFrame = DataLoader.getGameHistory(config, mariaDBConnection)
+      val unplayedGamesDF: DataFrame = DataLoader.getUnplayedGames(inputMatchesDF, config, mariaDBConnection)
 
-      val inputMatchesDF: DataFrame = inputDFs.reduce((acc, x) => acc.union(x))
-      val predictTableDF: DataFrame = spark.read.jdbc(mariaDBConnection._1, config.mariadbPredictTableName, mariaDBConnection._2)
-
-      val df: DataFrame = inputMatchesDF.union(predictTableDF)
+      val df: DataFrame = inputMatchesDF.unionByName(unplayedGamesDF, allowMissingColumns = true)
       df.cache()
       val initialDFCount: Long = df.count()
 
@@ -43,7 +39,7 @@ object PremierLeagueStatsDE {
       joinedDF.checkpoint()
       val finalDF: DataFrame = ArrayColumnToColumns.transform(joinedDF)
 
-//      finalDF.show(false)
+//      finalDF.orderBy(asc("game_datetime")).show(1000, false)
 
       finalDF.write.mode("overwrite").partitionBy(SEASON).parquet(config.minioDestTableName)
 

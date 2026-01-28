@@ -138,7 +138,8 @@ object AllGamesTransformation {
       )
       //  match result
       .withColumn(MATCH_RESULT,
-        when(col(GOALS_SCORED) > col(GOALS_SCORED_AGAINST), WIN)
+        when(col(GOALS_SCORED).isNull || col(GOALS_SCORED_AGAINST).isNull, lit(null))
+          .when(col(GOALS_SCORED) > col(GOALS_SCORED_AGAINST), WIN)
           .when(col(GOALS_SCORED_AGAINST) > col(GOALS_SCORED), LOSS)
           .otherwise(DRAW)
       )
