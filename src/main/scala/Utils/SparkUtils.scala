@@ -9,7 +9,7 @@ object SparkUtils {
   def createSparkSession(): SparkSession = {
     SparkSession
       .builder()
-      .config("spark.master", "local")
+//      .config("spark.master", "local")
       .appName("PremierLeagueStatsDE")
       .getOrCreate()
   }
