@@ -10,6 +10,8 @@ object Constants {
   val GAME_DATE: String = "game_date"
   val GAME_TIME: String = "game_time"
 
+  val HOME_TEAM_AVG_SQUAD_VALUE: String = "home_team_avg_squad_value"
+  val AWAY_TEAM_AVG_SQUAD_VALUE: String = "away_team_avg_squad_value"
   val HOME_TEAM_GOALS: String = "home_team_goals"
   val AWAY_TEAM_GOALS: String = "away_team_goals"
   val HOME_TEAM_XG: String = "home_team_xg"
@@ -331,6 +333,8 @@ object Constants {
     GAME_TIME,
     HOME_TEAM,
     AWAY_TEAM,
+    HOME_TEAM_AVG_SQUAD_VALUE,
+    AWAY_TEAM_AVG_SQUAD_VALUE,
     HOME_TEAM_HOME_GOALS_LAST_GAME,
     HOME_TEAM_HOME_GOALS_LAST_2_GAMES,
     AWAY_TEAM_AWAY_GOALS_LAST_GAME,
@@ -395,6 +399,8 @@ object Constants {
     GAME_TIME,
     HOME_TEAM,
     AWAY_TEAM,
+    HOME_TEAM_AVG_SQUAD_VALUE,
+    AWAY_TEAM_AVG_SQUAD_VALUE,
 
     HOME_TEAM_GOALS_SCORED_LAST_GAME,
     HOME_TEAM_AVG_GOALS_SCORED_LAST_3_GAMES,
@@ -546,6 +552,8 @@ object Constants {
     GAME_TIME,
     HOME_TEAM,
     AWAY_TEAM,
+    HOME_TEAM_AVG_SQUAD_VALUE,
+    AWAY_TEAM_AVG_SQUAD_VALUE,
 
     HOME_TEAM_GOALS_SCORED_LAST_GAME,
     HOME_TEAM_AVG_GOALS_SCORED_LAST_3_GAMES,
